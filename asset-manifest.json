@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/prateek-sportfolio/static/css/main.10186de9.css",
-    "main.js": "/prateek-sportfolio/static/js/main.bd800b8a.js",
-    "static/js/453.232a6b53.chunk.js": "/prateek-sportfolio/static/js/453.232a6b53.chunk.js",
-    "static/media/Certificate verification.png": "/prateek-sportfolio/static/media/Certificate verification.847a72d160945f534ee4.png",
-    "static/media/ChatApp.png": "/prateek-sportfolio/static/media/ChatApp.d3333a6d147b8c15456e.png",
-    "static/media/Weather.png": "/prateek-sportfolio/static/media/Weather.bccff4924815e5517eb9.png",
-    "static/media/dev_png.png": "/prateek-sportfolio/static/media/dev_png.6bee84e3323f18653849.png",
-    "static/media/myImg.jpg": "/prateek-sportfolio/static/media/myImg.04c8fbb1428b8f98e869.jpg",
-    "index.html": "/prateek-sportfolio/index.html",
-    "main.10186de9.css.map": "/prateek-sportfolio/static/css/main.10186de9.css.map",
-    "main.bd800b8a.js.map": "/prateek-sportfolio/static/js/main.bd800b8a.js.map",
-    "453.232a6b53.chunk.js.map": "/prateek-sportfolio/static/js/453.232a6b53.chunk.js.map"
+    "main.css": "/Prateek-sPortfolio/static/css/main.10186de9.css",
+    "main.js": "/Prateek-sPortfolio/static/js/main.ac9e6eae.js",
+    "static/js/453.232a6b53.chunk.js": "/Prateek-sPortfolio/static/js/453.232a6b53.chunk.js",
+    "static/media/Certificate verification.png": "/Prateek-sPortfolio/static/media/Certificate verification.847a72d160945f534ee4.png",
+    "static/media/ChatApp.png": "/Prateek-sPortfolio/static/media/ChatApp.d3333a6d147b8c15456e.png",
+    "static/media/Weather.png": "/Prateek-sPortfolio/static/media/Weather.bccff4924815e5517eb9.png",
+    "static/media/dev_png.png": "/Prateek-sPortfolio/static/media/dev_png.6bee84e3323f18653849.png",
+    "static/media/myImg.jpg": "/Prateek-sPortfolio/static/media/myImg.04c8fbb1428b8f98e869.jpg",
+    "index.html": "/Prateek-sPortfolio/index.html",
+    "main.10186de9.css.map": "/Prateek-sPortfolio/static/css/main.10186de9.css.map",
+    "main.ac9e6eae.js.map": "/Prateek-sPortfolio/static/js/main.ac9e6eae.js.map",
+    "453.232a6b53.chunk.js.map": "/Prateek-sPortfolio/static/js/453.232a6b53.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.10186de9.css",
-    "static/js/main.bd800b8a.js"
+    "static/js/main.ac9e6eae.js"
   ]
 }
