@@ -10,7 +10,7 @@ import { OrbitControls, Sphere } from '@react-three/drei';
 const Projects = () => {
   const projects = [
     {
-      name: 'Certificate Verification System',
+      name: 'Certificate Management System',
       image: CertificateVerificationImage,
       description: [
         'MERN stack web application for secure certificate management',
@@ -20,7 +20,6 @@ const Projects = () => {
         'MongoDB database for efficient data storage and retrieval'
       ],
       github: 'https://github.com/user/project1',
-      live: 'https://project1.com'
     },
     {
       name: 'Weather App',
@@ -33,10 +32,9 @@ const Projects = () => {
         'User-friendly interface with search functionality for different locations'
       ],
       github: 'https://github.com/user/project2',
-      live: 'https://project2.com'
     },
     {
-      name: 'Anonymous Chat Application',
+      name: 'Ai Tools Explorer',
       image: ChatAppImage,
       description: [
         'Real-time anonymous chat app using Node.js, Socket.io, and MongoDB',
@@ -46,7 +44,6 @@ const Projects = () => {
         'Responsive design with HTML, CSS, and JavaScript for all devices'
       ],
       github: 'https://github.com/user/project3',
-      live: 'https://project3.com'
     },
   ];
 
