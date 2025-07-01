@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Prateek-sPortfolio/static/css/main.52484ad2.css",
-    "main.js": "/Prateek-sPortfolio/static/js/main.6902c350.js",
+    "main.js": "/Prateek-sPortfolio/static/js/main.3e2a7507.js",
     "static/js/453.232a6b53.chunk.js": "/Prateek-sPortfolio/static/js/453.232a6b53.chunk.js",
     "static/media/AiToolsExp.png": "/Prateek-sPortfolio/static/media/AiToolsExp.ca2c04c95172798929bb.png",
     "static/media/CMS.png": "/Prateek-sPortfolio/static/media/CMS.1af03269499e4e44ab0b.png",
@@ -10,11 +10,11 @@
     "static/media/dev_png.png": "/Prateek-sPortfolio/static/media/dev_png.6bee84e3323f18653849.png",
     "index.html": "/Prateek-sPortfolio/index.html",
     "main.52484ad2.css.map": "/Prateek-sPortfolio/static/css/main.52484ad2.css.map",
-    "main.6902c350.js.map": "/Prateek-sPortfolio/static/js/main.6902c350.js.map",
+    "main.3e2a7507.js.map": "/Prateek-sPortfolio/static/js/main.3e2a7507.js.map",
     "453.232a6b53.chunk.js.map": "/Prateek-sPortfolio/static/js/453.232a6b53.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.52484ad2.css",
-    "static/js/main.6902c350.js"
+    "static/js/main.3e2a7507.js"
   ]
 }
