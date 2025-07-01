@@ -1,4 +1,3 @@
-import React from 'react';
 import myImg from '../assets/myImg.jpg';
 import { FaCode, FaLaptopCode, FaGraduationCap } from 'react-icons/fa';
 import { Canvas } from '@react-three/fiber';
