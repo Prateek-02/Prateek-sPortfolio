@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaHtml5, FaCss3Alt, FaJs, FaJava, FaCode, FaReact } from 'react-icons/fa';
-import { SiCplusplus } from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaJs, FaCode, FaReact } from 'react-icons/fa';
+import { SiCplusplus, SiNodedotjs, SiExpress } from 'react-icons/si';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Sphere } from '@react-three/drei';
 
@@ -9,11 +9,11 @@ const Skills = () => {
     { name: 'HTML', icon: FaHtml5, color: 'text-orange-500' },
     { name: 'CSS', icon: FaCss3Alt, color: 'text-blue-500' },
     { name: 'JavaScript', icon: FaJs, color: 'text-yellow-500' },
-    { name: 'C', icon: SiCplusplus, color: 'text-blue-700' },
     { name: 'C++', icon: SiCplusplus, color: 'text-blue-600' },
     { name: 'DSA', icon: FaCode, color: 'text-green-600' },
-    { name: 'Java', icon: FaJava, color: 'text-red-500' },
     { name: 'React', icon: FaReact, color: 'text-blue-400' },
+    { name: 'Node.js', icon: SiNodedotjs, color: 'text-blue-700' },
+    { name: 'Express', icon: SiExpress, color: 'text-red-500' },
   ];
 
   return (
