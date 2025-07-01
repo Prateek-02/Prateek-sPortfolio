@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import CertificateVerificationImage from '../assets/Certificate verification.png';
+import { FaGithub} from 'react-icons/fa';
+import CMS from '../assets/CMS.png';
 import WeatherAppImage from '../assets/Weather.png';
-import ChatAppImage from '../assets/ChatApp.png';
+import AiToolsExp from '../assets/AiToolsExp.png'
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Sphere } from '@react-three/drei';
 
@@ -11,7 +11,7 @@ const Projects = () => {
   const projects = [
     {
       name: 'Certificate Management System',
-      image: CertificateVerificationImage,
+      image: CMS,
       description: [
         'MERN stack web application for secure certificate management',
         'Admin Dashboard for uploading and managing certificate data',
@@ -19,7 +19,7 @@ const Projects = () => {
         'Features include data validation, secure login, and user-friendly interface',
         'MongoDB database for efficient data storage and retrieval'
       ],
-      github: 'https://github.com/user/project1',
+      github: 'https://github.com/Prateek-02/Certificate-Management',
     },
     {
       name: 'Weather App',
@@ -31,19 +31,19 @@ const Projects = () => {
         'Responsive design for seamless use on desktop and mobile devices',
         'User-friendly interface with search functionality for different locations'
       ],
-      github: 'https://github.com/user/project2',
+      github: 'https://github.com/Prateek-02/Web-dev-Projects/tree/main/Js%20Projects/Weather',
     },
     {
       name: 'Ai Tools Explorer',
-      image: ChatAppImage,
+      image: AiToolsExp,
       description: [
-        'Real-time anonymous chat app using Node.js, Socket.io, and MongoDB',
-        'Allows users to join and chat without registration for privacy',
-        'Implements Socket.io for instant messaging and real-time updates',
-        'Uses MongoDB to store chat history and manage active rooms',
-        'Responsive design with HTML, CSS, and JavaScript for all devices'
+        'AI Tools Explorer web app built using React, Tailwind CSS, and Supabase',
+        'Enables users to discover AI tools across various categories with search and filter features',
+        'Implements Supabase Auth for secure email/password and Google login',
+        'Allows users to bookmark favorite tools for quick future access',
+        'Plans to add user reviews, dark mode, and AI-based recommendations for personalized discovery'
       ],
-      github: 'https://github.com/user/project3',
+      github: 'https://github.com/Prateek-02/Web-dev-Projects/tree/main/React/Ai%20Tools%20Explorer',
     },
   ];
 
@@ -133,16 +133,6 @@ const Projects = () => {
                       whileTap={{ scale: 0.9 }}
                     >
                       <FaGithub className="mr-2" /> GitHub
-                    </motion.a>
-                    <motion.a 
-                      href={project.live} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="flex items-center text-gray-300 hover:text-indigo-400 transition-colors duration-300"
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
-                    >
-                      <FaExternalLinkAlt className="mr-2" /> Live Demo
                     </motion.a>
                   </div>
                 </div>

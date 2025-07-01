@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaInstagram, FaEnvelopeSquare } from 'react-icons/fa';
 import { SiCodingninjas } from 'react-icons/si';
 
 const Footer = () => {
@@ -17,8 +17,8 @@ const Footer = () => {
               <a href="https://www.linkedin.com/in/prateekrajofficial/" target="_blank" rel="noopener noreferrer" className="text-lg hover:text-blue-500 transition-colors duration-300">LinkedIn</a>
             </div>
             <div className="flex items-center">
-              <span className="mr-2 text-3xl hover:text-yellow-500 transition-colors duration-300">📧</span>
-              <a href="mailto:your.email@example.com" className="text-lg hover:text-yellow-500 transition-colors duration-300">Prateekrajgrd74@gmail.com</a>
+              <FaEnvelopeSquare className="mr-2 text-3xl hover:text-yellow-500 transition-colors duration-300"/>
+              <a href="mailto:Prateekrajgrd74@gmail.com" className="text-lg hover:text-yellow-500 transition-colors duration-300">Prateekrajgrd74@gmail.com</a>
             </div>
           </div>
           <div className="w-full md:w-1/4 mb-4 md:mb-0">
