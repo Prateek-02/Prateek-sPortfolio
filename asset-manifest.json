@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Prateek-sPortfolio/static/css/main.52484ad2.css",
-    "main.js": "/Prateek-sPortfolio/static/js/main.3e2a7507.js",
+    "main.css": "/Prateek-sPortfolio/static/css/main.14bad269.css",
+    "main.js": "/Prateek-sPortfolio/static/js/main.5688d7be.js",
     "static/js/453.232a6b53.chunk.js": "/Prateek-sPortfolio/static/js/453.232a6b53.chunk.js",
+    "static/media/NexTalk.png": "/Prateek-sPortfolio/static/media/NexTalk.41e8da904ba2fc62a4e9.png",
     "static/media/AiToolsExp.png": "/Prateek-sPortfolio/static/media/AiToolsExp.ca2c04c95172798929bb.png",
-    "static/media/CMS.png": "/Prateek-sPortfolio/static/media/CMS.1af03269499e4e44ab0b.png",
     "static/media/myImg.jpg": "/Prateek-sPortfolio/static/media/myImg.0891baf473794748c803.jpg",
     "static/media/Weather.png": "/Prateek-sPortfolio/static/media/Weather.bccff4924815e5517eb9.png",
     "static/media/dev_png.png": "/Prateek-sPortfolio/static/media/dev_png.6bee84e3323f18653849.png",
     "index.html": "/Prateek-sPortfolio/index.html",
-    "main.52484ad2.css.map": "/Prateek-sPortfolio/static/css/main.52484ad2.css.map",
-    "main.3e2a7507.js.map": "/Prateek-sPortfolio/static/js/main.3e2a7507.js.map",
+    "main.14bad269.css.map": "/Prateek-sPortfolio/static/css/main.14bad269.css.map",
+    "main.5688d7be.js.map": "/Prateek-sPortfolio/static/js/main.5688d7be.js.map",
     "453.232a6b53.chunk.js.map": "/Prateek-sPortfolio/static/js/453.232a6b53.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52484ad2.css",
-    "static/js/main.3e2a7507.js"
+    "static/css/main.14bad269.css",
+    "static/js/main.5688d7be.js"
   ]
 }
