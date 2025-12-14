@@ -1,7 +1,7 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { FaGithub} from 'react-icons/fa';
-import CMS from '../assets/CMS.png';
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import NexTalk from '../assets/NexTalk.png';
 import WeatherAppImage from '../assets/Weather.png';
 import AiToolsExp from '../assets/AiToolsExp.png'
 import { Canvas } from '@react-three/fiber';
@@ -10,16 +10,16 @@ import { OrbitControls, Sphere } from '@react-three/drei';
 const Projects = () => {
   const projects = [
     {
-      name: 'Certificate Management System',
-      image: CMS,
+      name: 'NexTalk',
+      image: NexTalk,
       description: [
-        'MERN stack web application for secure certificate management',
-        'Admin Dashboard for uploading and managing certificate data',
-        'Student portal for quick certificate retrieval using unique IDs',
-        'Features include data validation, secure login, and user-friendly interface',
-        'MongoDB database for efficient data storage and retrieval'
+        'MERN stack real-time chat application with secure user authentication',
+        'JWT-based login and registration system for protected access',
+        'Real-time one-to-one and group messaging using Socket.io',
+        'Typing indicators, online user status, and instant message delivery',
+        'MongoDB database for scalable storage of users, chats, and messages'
       ],
-      github: 'https://github.com/Prateek-02/Certificate-Management',
+      github: 'https://github.com/Prateek-02/NexTalk',
     },
     {
       name: 'Weather App',
@@ -32,6 +32,7 @@ const Projects = () => {
         'User-friendly interface with search functionality for different locations'
       ],
       github: 'https://github.com/Prateek-02/Web-dev-Projects/tree/main/Js%20Projects/Weather',
+      live: 'https://prateek-02.github.io/WeatherAPP/',
     },
     {
       name: 'Ai Tools Explorer',
@@ -44,30 +45,85 @@ const Projects = () => {
         'Plans to add user reviews, dark mode, and AI-based recommendations for personalized discovery'
       ],
       github: 'https://github.com/Prateek-02/Web-dev-Projects/tree/main/React/Ai%20Tools%20Explorer',
+      live: 'https://aitoolsexp.netlify.app/',
     },
   ];
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.3
-      }
-    }
-  };
+  const ProjectCard = ({ project, index }) => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const projectVariants = {
-    hidden: { y: 50, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: 'spring',
-        damping: 12,
-        stiffness: 100
-      }
-    }
+    const isEven = index % 2 === 0;
+
+    return (
+      <div ref={ref} className="relative flex items-center mb-20">
+        {/* Timeline dot */}
+        <motion.div
+          className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-indigo-500 rounded-full border-4 border-gray-900 z-10 shadow-lg shadow-indigo-500/50"
+          initial={{ scale: 0, opacity: 0 }}
+          animate={isInView ? { scale: 1, opacity: 1 } : { scale: 0, opacity: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        />
+
+        {/* Project card */}
+        <motion.div
+          className={`w-full md:w-5/12 ${isEven ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'} relative z-10`}
+          initial={{ 
+            x: isEven ? -100 : 100, 
+            opacity: 0 
+          }}
+          animate={isInView ? { 
+            x: 0, 
+            opacity: 1 
+          } : { 
+            x: isEven ? -100 : 100, 
+            opacity: 0 
+          }}
+          transition={{ 
+            duration: 0.6, 
+            delay: 0.3,
+            type: 'spring',
+            stiffness: 100
+          }}
+        >
+          <div className="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/50">
+            <img src={project.image} alt={project.name} className="w-full h-48 object-cover" />
+            <div className="p-6">
+              <h3 className="text-2xl font-semibold mb-3 text-indigo-400">{project.name}</h3>
+              <ul className="text-gray-300 mb-4 list-disc list-inside">
+                {project.description.map((point, idx) => (
+                  <li key={idx} className="mb-1 text-sm">{point}</li>
+                ))}
+              </ul>
+              <div className="flex justify-between items-center gap-4">
+                <motion.a 
+                  href={project.github} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center text-gray-300 hover:text-indigo-400 transition-colors duration-300"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <FaGithub className="mr-2" /> GitHub
+                </motion.a>
+                {project.live && (
+                  <motion.a 
+                    href={project.live} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex items-center text-gray-300 hover:text-indigo-400 transition-colors duration-300"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <FaExternalLinkAlt className="mr-2" /> Live Demo
+                  </motion.a>
+                )}
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    );
   };
 
   return (
@@ -94,7 +150,7 @@ const Projects = () => {
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <motion.h2 
-          className="text-4xl font-bold mb-12 text-center text-white relative"
+          className="text-4xl font-bold mb-16 text-center text-white relative"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -102,44 +158,14 @@ const Projects = () => {
           My Projects
           <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-indigo-500"></span>
         </motion.h2>
-        <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
+        <div className="relative max-w-6xl mx-auto">
+          {/* Continuous timeline line */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-indigo-500 via-purple-500 to-indigo-500 z-0 top-0"></div>
+          
           {projects.map((project, index) => (
-            <motion.div 
-              key={project.name}
-              className="w-full"
-              variants={projectVariants}
-            >
-              <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
-                <img src={project.image} alt={project.name} className="w-full h-48 object-cover" />
-                <div className="p-6">
-                  <h3 className="text-2xl font-semibold mb-3 text-indigo-400">{project.name}</h3>
-                  <ul className="text-gray-300 mb-4 list-disc list-inside">
-                    {project.description.map((point, index) => (
-                      <li key={index} className="mb-1">{point}</li>
-                    ))}
-                  </ul>
-                  <div className="flex justify-between">
-                    <motion.a 
-                      href={project.github} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="flex items-center text-gray-300 hover:text-indigo-400 transition-colors duration-300"
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
-                    >
-                      <FaGithub className="mr-2" /> GitHub
-                    </motion.a>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
+            <ProjectCard key={project.name} project={project} index={index} />
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

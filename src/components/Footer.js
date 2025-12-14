@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import { FaLinkedin, FaGithub, FaInstagram, FaEnvelopeSquare } from 'react-icons/fa';
-import { SiCodingninjas } from 'react-icons/si';
+import { SiCodingninjas, SiLeetcode } from 'react-icons/si';
 
 const Footer = () => {
   return (
@@ -23,14 +23,15 @@ const Footer = () => {
           </div>
           <div className="w-full md:w-1/4 mb-4 md:mb-0">
             <div className="flex space-x-4">
-              <a href="https://github.com/Prateek-02" target="_blank" rel="noopener noreferrer"><FaGithub className="text-3xl hover:text-gray-400 transition-colors duration-300" /></a>
+              <a href="https://github.com/Prateek-02" target="_blank" rel="noopener noreferrer"><FaGithub className="text-3xl hover:text-blue-400 transition-colors duration-300" /></a>
               <a href="https://www.instagram.com/prateek_sinha_02" target="_blank" rel="noopener noreferrer"><FaInstagram className="text-3xl hover:text-pink-500 transition-colors duration-300" /></a>
               <a href="https://www.naukri.com/code360/profile/3950dc56-f145-4c01-83ab-37ba15684469" target="_blank" rel="noopener noreferrer"><SiCodingninjas className="text-3xl hover:text-orange-500 transition-colors duration-300" /></a>
+              <a href="https://leetcode.com/u/Prateek_Raj02/" target="_blank" rel="noopener noreferrer"><SiLeetcode className="text-3xl hover:text-yellow-500 transition-colors duration-300" /></a>
             </div>
           </div>
           <div className="w-full md:w-1/4">
             <ul className="flex flex-col space-y-2">
-              {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
+              {['Home', 'About', 'Skills', 'Projects'].map((item) => (
                 <li key={item}>
                   <Link
                     to={item.toLowerCase()}

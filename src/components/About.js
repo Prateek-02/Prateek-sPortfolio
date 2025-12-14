@@ -43,7 +43,7 @@ const About = () => {
           </div>
           <div className="md:w-2/3 md:pl-12">
             <p className="text-lg mb-6 text-gray-300 leading-relaxed">
-              Hi, I'm <span className="font-semibold text-indigo-400">Prateek Raj</span>, a passionate 3rd-year student aspiring to become a Software Engineer. My journey in tech has been an exciting adventure of continuous learning and growth.
+              Hi, I'm <span className="font-semibold text-indigo-400">Prateek Raj</span>, a passionate 4th-year student aspiring to become a Software Engineer. My journey in tech has been an exciting adventure of continuous learning and growth.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
               <div className="flex items-center bg-gray-800 p-4 rounded-lg shadow-indigo-900 transform hover:scale-105 transition duration-300">
